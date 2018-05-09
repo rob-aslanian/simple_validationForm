@@ -71,4 +71,6 @@ For now  , you can use this names:
 ### In NodeJs 
 ```js
 import 'simple-validation-form'
+
+   Validator.validate();
 ```
