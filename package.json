@@ -1,0 +1,29 @@
+{
+  "name": "simple-validation-form",
+  "version": "1.2.0",
+  "description": "Very Simple Validation",
+  "main": "simple_validation.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertguitar20/simple_validationForm.git"
+  },
+  "keywords": [
+    "Validation",
+    "Form",
+    "Validate",
+    "Simple",
+    "Validator"
+  ],
+  "author": "Robert Aslanyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertguitar20/simple_validationForm/issues"
+  },
+  "homepage": "https://github.com/robertguitar20/simple_validationForm#readme"
+}

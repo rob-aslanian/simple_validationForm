@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form > input {
+            margin-bottom: 1rem;
+        }
+                *{box-sizing: border-box;}
+        html , body{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #213;
+
+        }
+        input{
+            width: 33.333%;
+            padding: .5rem;
+            margin: .5rem;
+            border:3px solid #ccc;
+            border-radius: 3px;
+        }
+            input.invalid{
+                border-color: orange;
+            }
+            input.correct{
+                border-color: green;
+            }
+            .errors{
+                color:#ccc;
+                font-size: 1rem;
+                max-width:  30%;
+                text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 style="text-align: center;">Validation Form</h1>
+        <form>
+            <input type="text" name="name" placeholder="Some name..." class="test">
+            <input type="email" name="email" placeholder="example@exapmle">
+            <input type="text" name="telephone" placeholder="000 00 00 00">
+            <input type="password" name="password" placeholder="Your Password">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="js/simple_validation.js"></script>
+</body>
+</html>
