@@ -23,6 +23,10 @@
 |successClass|String\|Node|The class for input if it correct validate , default not styled|correct
 |errorClass|String\|Node|The class for input if  it inccorect validate , default not styled|error
 
+### Methods 
+- Validator.validate()
+- Validator.addPattern(`object` | [pattern name: `string` , regular expression: `regexp` , error message: `boolean|string` ])
+
 ### Important
 Use name attribute for inputs , otherwise validaton can`t work !
 
@@ -46,8 +50,9 @@ For now  , you can use this names:
         DOES`T WORK!!! AND NAME VALUE MUST BE EQUAL TO TYPE VALUE
         FOR CORRECT VALIDATE
         -->
-   <input type="text" name="name" placeholder="Some name..." class="test">
+   <input type="text"  name="name"  placeholder="Some name..." class="test">
    <input type="email" name="email" placeholder="example@exapmle">
+   <input type="cite"  name="cite"  placeholder="https://example.exm">
    .....
   
     <input type="submit" value="Submit">
@@ -56,6 +61,16 @@ For now  , you can use this names:
 ......
  <script src="/node_modules/simple-validation-form/simple_validation.js"></script>
  <script>
+   // Add Custom Pattern 
+   Validator.addPattern('cite' , /^https?:\/\// , true)
+      // Or
+   Validator.addPattern('cite' , /^https?:\/\// , 'Something goes wrong')
+      // Or
+   Validator.addPattern({
+      cite: /^https?:\/\//
+   } , true )
+ 
+ 
     // Set Validate 
     Validator.set({
       showErrorMessages:false,
