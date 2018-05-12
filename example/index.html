@@ -51,13 +51,17 @@
             <input type="text" name="name" placeholder="Some name..." class="test">
             <input type="email" name="email" placeholder="example@exapmle">
             <input type="text" name="telephone" placeholder="000 00 00 00">
+            <input type="text" name="cite" placeholder="https://example.exm">
+            
             <input type="password" name="password" placeholder="Your Password">
 
             <input type="submit" value="Submit">
         </form>
     </div>
-    <script src="js/simple_validation.js"></script>
+    <script src="../simple_validation.js"></script>
     <script>
+        //** Example **//
+        Validator.addPattern('cite' , /^https?:\/\// , true);
         Validator.validate();
     </script>
 </body>
